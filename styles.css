@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root {
+    --cyan: hsl(171, 66%, 44%);
+    --lightblue: hsl(233, 100%, 69%);
+    --darkgrayblue: hsl(210, 10%, 33%);
+    --grayblue: hsl(201, 11%, 66%);
+
+    --fw400: 400;
+    --fw600: 600;
+    --lineheight: 1.6;
+
+    --margin: .625rem;
+    --sectionpadding: 6.25rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 160rem;
+    margin: auto;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    padding-top: 6.25rem;
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -12.5rem;
+}
+
+header img {
+    margin-bottom: 2.5rem;
+    height: 6.25rem;
+}
+
+header h1 {
+    margin-bottom: var(--margin);
+    font-size: 2.1875rem;
+    color: var(--darkgrayblue);
+}
+
+header p {
+    max-width: 34.375rem;
+    margin: 0 auto 2.1875rem auto;
+    line-height: var(--lineheight);
+    color: var(--grayblue);
+}
+
+ button {
+    border: none;
+    padding: .9375rem 1.875rem .9375rem 1.875rem;
+    border-radius: 3.125rem;
+    font-weight: var(--fw600);
+    color: white;
+    cursor: pointer;
+}
+
+ button:first-of-type {
+    background-color: var(--cyan);
+    margin-right: .625rem;
+}
+
+ button:last-of-type {
+    background-color: var(--lightblue);
+}
+
+main section {
+    text-align: center;
+    padding-top: var(--sectionpadding);
+}
+
+
+main section h1 {
+    margin-bottom: var(--margin);
+    color: var(--darkgrayblue);
+    font-size: 1.875rem;
+}
+
+main section p {
+    max-width: 39.0625rem;
+    margin: auto;
+    color: var(--grayblue);
+    margin-bottom: 3.125rem;
+    line-height: var(--lineheight);
+}
+
+main section div {
+    display: inline-block;
+    width: 18.75rem;
+    vertical-align: top;
+    text-align: initial;
+}
+
+main section div h3 {
+    margin-bottom: .625rem;
+}
+
+main section div p:last-of-type {
+    margin: initial;
+}
+
+.section1 img {
+    margin-right: 6.25rem;
+}
+
+.section1 img, .section2 img {
+    height: 31.25rem;
+}
+
+.section1 div {
+    margin-top: 2.5rem;
+}
+
+.section2 > div {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.section2 > div div {
+    max-width: 21.875rem;
+    width: 100%;
+}
+
+.section2 > div div img {
+    height: 1.875rem;
+    margin-right: initial;
+    margin-bottom: 2.5rem;
+}
+
+.section2 div * {
+    text-align: center;
+}
+
+
+.section3 img:nth-child(-n+4) {
+    margin-right: 6.25rem;
+    max-width: 100%;
+}
+
+
+.section3 {
+    padding-bottom: var(--sectionpadding);
+}
+
+.section3 img {
+    height: 2.5rem;
+}
+
+.section3 h1 {
+    margin-top: 6.25rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(171, 66%, 44%, 0.3);
+    padding: 1.5625rem;;
+    gap: 6.25rem;
+}
+
+footer .links {
+    display: flex;
+    gap: 6.25rem;
+}
+
+footer img:first-of-type {
+    height: 3.125rem;
+}
+
+footer .links div span {
+    display: block;
+    margin-bottom: .625rem;
+}
+
+footer .links div span a {
+    text-decoration: none;
+    color: initial;
+}
+
+footer .links div span a:hover {
+    color: var(--cyan);
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 1.25rem;
+    margin-right: 3.125rem;
+}
+
+footer .social-icons img {
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 70em) {
+
+    header, section {
+        padding-inline: 2.5em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3.125em;
+        background-image: url("images/bg-header-mobile.png");
+        background-size: cover;
+        background-position: top;
+    }
+
+    header h1 {
+        font-size: 1.875em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 div {
+        text-align: center;
+        margin-top: 2.5em;
+    }
+
+    section img {
+        height: initial !important;
+    }
+
+    .section2 div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 img {
+        margin-right: initial;
+    }
+
+    .section3 img:nth-child(-n+4) {
+        margin-right: initial;
+        margin-bottom: 3.125em;
+    }
+
+    button {
+        margin: initial !important;
+        width: 100%;
+    }
+
+    button:first-of-type {
+        margin-bottom: 1.25em !important;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .links {
+        flex-direction: column;
+        gap: initial;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    footer .social-icons {
+        margin: initial;
+    }
+
+    footer {
+        gap: 2.5em;
+    }
+
+    footer div span {
+        margin-bottom: 1.25em !important;
+    }
+}
+
+
+
+
+
+
