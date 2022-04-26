@@ -149,7 +149,6 @@ main section div p:last-of-type {
 
 .section3 img:nth-child(-n+4) {
     margin-right: 6.25rem;
-    border: 5px solid red;
 }
 
 
