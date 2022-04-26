@@ -26,11 +26,9 @@
 
 body {
     font-family: 'Bai Jamjuree', sans-serif;
-    margin: auto;
 }
 
 header {
-    margin: auto;
     text-align: center;
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
@@ -151,7 +149,7 @@ main section div p:last-of-type {
 
 .section3 img:nth-child(-n+4) {
     margin-right: 6.25rem;
-    max-width: 100%;
+    border: 5px solid red;
 }
 
 
