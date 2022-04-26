@@ -170,8 +170,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: hsla(171, 66%, 44%, 0.3);
-    padding: 1.5625rem;;
-    gap: 6.25rem;
+    padding: 1.5625rem;
 }
 
 footer .links {
